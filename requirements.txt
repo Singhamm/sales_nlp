@@ -8,5 +8,8 @@ nltk.txt
 textblob
 gunicorn
 wordnet
-pros_cons
-reuters
+stopwords
+punkt
+tokenize
+word_tokenize
+sent_tokenize
