@@ -4,7 +4,7 @@ sklearn
 pandas
 numpy
 matplotlib
-nltk
+nltk.txt
 textblob
 gunicorn
 wordnet
