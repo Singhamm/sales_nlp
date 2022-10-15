@@ -7,3 +7,6 @@ matplotlib
 nltk
 textblob
 gunicorn
+wordnet
+pros_cons
+reuters
