@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Prediction Tool</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style> 
+    .div1 {
+      width: 300px;
+      height: 100px;
+      border: 1px solid blue;
+    }
+    
+    .div2 {
+      width: 300px;
+      height: 100px;  
+      padding: 50px;
+      border: 1px solid red;
+    }
+    </style>
+  
+</head>
+
+<body>
+ <div class="div1">
+	<h1 align="center">Sales Prediction Tool</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="Notes" placeholder="Notes" required="required" align="middle"><br>
+      <button type="submit" class="btn btn-primary btn-block btn-large" align="middle">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ <div class="div2">
+    <h4>Steps to take: </h4>
+     <output>{{prediction_text}}</output>  
+</div2>
+</body>
+</html>
